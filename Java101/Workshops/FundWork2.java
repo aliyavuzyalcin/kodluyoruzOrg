@@ -18,13 +18,17 @@ import java.util.Scanner;
  */
 public class FundWork2 {
     public static void main(String[] args) {
-        double vat = 0.18;
-        double price;
+        double vat, price;
+        boolean vatRate;
 
         Scanner keyboard = new Scanner(System.in);
         System.out.print("Please Enter the Price: ");
         price = keyboard.nextDouble();
         keyboard.close();
+        
+        vatRate = (0<price)&&(1000>price);
+        
+        vat = vatRate ? 0.18 : 0.08;
         double vatPrice = price * vat;
         double totalPrice = price + vatPrice;
 
