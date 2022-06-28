@@ -9,18 +9,21 @@ import java.util.Scanner;
  */
 public class LoopAverageFind {
     public static void main(String[] args) {
-        
+
         Scanner keyboard = new Scanner(System.in);
         System.out.print("Enter a number: ");
         int number = keyboard.nextInt();
-        int average = 0;
-        for (int i = 0; i <= number; i++) {
+        int total = 0, average;
+        int i, counter = 0;
+        for (i = 1; i < number; i++) {
             if((i % 3 == 0) && (i % 4 == 0)){
-                average = average + i;
+                total = total + i;
+                counter++;
+                System.out.print(i + " - ");
             }
         }
-        
-        System.out.print("Average is : " + average);
+        average = total / counter;
+        System.out.print("Average is : " + average + "\nThe i: " + i + "\nTotal: " + total + "\nCounter: " + counter);
         keyboard.close();
     }
 }
