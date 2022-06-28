@@ -13,6 +13,7 @@ public class LoopAverageFind {
         Scanner keyboard = new Scanner(System.in);
         System.out.print("Enter a number: ");
         int number = keyboard.nextInt();
+        keyboard.close();
         int total = 0, average;
         int i, counter = 0;
         for (i = 1; i < number; i++) {
@@ -24,6 +25,5 @@ public class LoopAverageFind {
         }
         average = total / counter;
         System.out.print("Average is : " + average + "\nThe i: " + i + "\nTotal: " + total + "\nCounter: " + counter);
-        keyboard.close();
     }
 }
