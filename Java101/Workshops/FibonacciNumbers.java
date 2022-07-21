@@ -26,5 +26,6 @@ public class FibonacciNumbers {
             number1 = number2;
             number2 = number3;
         }
+        keyboard.close();
     }
 }
