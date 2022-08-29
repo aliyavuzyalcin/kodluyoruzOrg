@@ -20,13 +20,13 @@ After giving the class name, we create the **scope of the class**, *namely the c
 After we open the class code block, we write the variables and methods for this code block. Remember that methods also have their own *code blocks*, namely scopes. We also denote them with **"{}"**.
 
     class Car {
-    // nitelikler
+    // attributes
     String type;
     String model;
     String color;
     int speed;
 
-    // davranışlar
+    // behaviors
     int increaseSpeed(int increment) {
         speed += increment;
         return speed;
