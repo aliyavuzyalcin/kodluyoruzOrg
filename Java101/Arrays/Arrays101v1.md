@@ -14,7 +14,7 @@ The array has a starting address in memory, and other consecutive elements are p
 
     double[] myList;   // preferred way
 
-veya 
+or
 
     double myList[];   // other form of definition
 
