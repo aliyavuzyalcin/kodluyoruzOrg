@@ -15,7 +15,7 @@ package Arrays.ArrayRecap;
  */
 public class HarmonicSerie {
     public static void main(String[] args) {
-        double[] serie = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+        double[] serie = { 1, 2, 3, 4, 5, 6, 7};
         double sum = 0;
         for (int row = 0; row < serie.length; row++) {
 
@@ -24,5 +24,7 @@ public class HarmonicSerie {
             System.out.format("%.2f", sum);
             System.out.println();
         }
+        System.out.print("Harmonic Average is: ");
+        System.out.format("%.2f", sum/serie.length);
     }
 }
